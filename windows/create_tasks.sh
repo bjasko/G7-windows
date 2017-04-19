@@ -17,10 +17,11 @@ STEP="Check running privileges"
 if ! isadmin
 then
   echo "You have to run this script as elevated/privileged user!"
+  echo "Right click > Run as Administrator"
+  sleep 20
   exit 1
 fi
 
 echo "run cmd for creating tasks and opening firewall"
 
 ./create_tasks.cmd
-
